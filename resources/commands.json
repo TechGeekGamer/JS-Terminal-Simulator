@@ -1,0 +1,10 @@
+{
+    "help":{
+        "about":"View this help menu.",
+        "code":"N/A"
+    },
+    "exit":{
+        "about":"Exit the command line mode.",
+        "code":"N/A"
+    }
+}
