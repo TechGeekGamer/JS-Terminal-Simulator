@@ -13,13 +13,13 @@ console.log(`Connecting to "${url}"...`)
 }
 }
 const fatalError = function(){
-    console.log("A fatal error has occurred! The program can not autorecover.")
+    console.log("A fatal error has occurred! The program could not auto-recover.")
 }
     function commandLineMode(returned = false){
         try{
 
             if(returned == false){
-                console.log('\nTerminal Simulator VERSION 1. To see available commands, type "help".')
+                console.log('\nTerminal Simulator VERSION 2. To see available commands, type "help".')
             }
             rl.question('> ', ans => {
                 //JSON check
