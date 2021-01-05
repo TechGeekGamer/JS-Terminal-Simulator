@@ -27,8 +27,7 @@ if(!fs.existsSync("./resources/commands.json")){
                 "about":"Exit the command line mode.",
                 "code":"N/A"
             }
-        }
-    ), null, 2)
+        }, null, 2))
 }
 
 const fatalError = function(){
