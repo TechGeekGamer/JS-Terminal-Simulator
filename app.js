@@ -12,6 +12,25 @@ console.log(`Connecting to "${url}"...`)
     return null
 }
 }
+
+if(!fs.existsSync("./resources/commands.json")){
+    if(fs.existsSync("./resources/commands.json")){
+        fs.mkdirSync("./resources/")
+    }
+    fs.writeFileSync("./resources/commands.json", JSON.stringify(
+        {
+            "help":{
+                "about":"View this help menu.",
+                "code":"N/A"
+            },
+            "exit":{
+                "about":"Exit the command line mode.",
+                "code":"N/A"
+            }
+        }
+    ), null, 2)
+}
+
 const fatalError = function(){
     console.log("A fatal error has occurred! The program could not auto-recover.")
 }
